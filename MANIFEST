@@ -1,5 +1,6 @@
 .bundle
 Build.PL
+CHANGES.md
 lib/CPANPLUS/Shell/Default/Plugins/Repo.pm
 MANIFEST			This list of files
 t/01.t

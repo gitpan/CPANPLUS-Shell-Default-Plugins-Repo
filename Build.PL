@@ -10,7 +10,7 @@ my $build = Module::Build->new(
         'version'    => '0',
         'Test::More' => '0',
     },
-    dist_abstract => 'perl bunlder, inspired by ruby bundler',
+    dist_abstract => 'This is CPANPLUS pluggin. Provides interface to CPAN::Repo server',
 );
 
 $build->create_build_script();
