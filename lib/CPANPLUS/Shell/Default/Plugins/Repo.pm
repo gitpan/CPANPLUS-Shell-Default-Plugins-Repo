@@ -1,5 +1,5 @@
 package CPANPLUS::Shell::Default::Plugins::Repo;
-our $VERSION = '0.0.2';
+our $VERSION = '0.0.3';
 use strict;
 our %handlers;
 
@@ -71,13 +71,13 @@ sub repo_help {
 
     return <<MESSAGE;
 
-    # This is CPANPLUS pluggin. Provides interface to CPAN::Repo server 
-
-    # in cpanp client session
+    # Provides interface to CPAN::Repo server.
+    # See http://search.cpan.org/perldoc?CPAN::Repo for details.
+    
     /? repo
-    /repo server <uri> # setup CPAN::Repo server
+    /repo server <url> # setup CPAN::Repo server
     /repo list # list available repos from CPAN::Repo server
-    /repo set <repo-id> <repo_id> ... # setup repo list and save it as custom sources
+    /repo set <repo-id> <repo_id> ... # setup repos and save it as custom sources
     
     
 MESSAGE
@@ -154,13 +154,15 @@ Alexey Melezhik / melezhik@gmail.com
 
 =head1 SYNOPSIS
 
-This is CPANPLUS pluggin. Provides interface to CPAN::Repo.
-
+This is CPANPLUS plugin. Provides interface to CPAN::Repo. 
+See http://search.cpan.org/perldoc?CPAN::Repo for details about CPAN::Repo server.
+    
     # in cpanp client session
     /? repo
-    /repo server <uri> # setup CPAN::Repo server
+    /repo server <url> # setup CPAN::Repo server
     /repo list # list available repos from CPAN::Repo server
-    /repo set <repo-id> <repo_id> ... # setup repo list and save it as custom sources
+    /repo set <repo-id> <repo_id> ... # setup repos and save it as custom sources
+
 
 =head1 See Also
 
